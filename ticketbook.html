@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Join Blink</title>
+<link rel="icon" href="icon2.jpg" type="image/icon type">
+<style>
+   
+.div1{
+    background-color:rgb(121,80,56);
+    color:antiquewhite;
+    
+}
+img{transition: transform 0.3s;}
+        
+        img:hover{transform : scale(1.2);}
+        input[type=submit] {
+            background-color: beige;
+            color:black;
+        }
+.child{
+    display:inline-block;
+}
+.header{
+    text-align:left;
+    color:antiquewhite;
+    font-size:80px;
+  }
+  a:link,a:visited{
+      color:antiquewhite;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    .div2{
+  background-color: rgb(253, 255, 242);
+  font-family:'Quicksand';
+  color: black;
+  top:70%;
+  left:50%;
+}
+.center 
+{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  position: absolute;
+  background-color:antiquewhite;
+  padding:40px;
+}
+
+h1{
+    color:black;
+    font-size: 60px;
+    font-family:"playfair display";
+}
+select
+{
+    width:  100%;
+    height: 42px;
+}
+.bor{
+padding:10px;
+border:5px solid black; 
+border-width:8px; 
+border-style:"dashed";
+}
+.form-submit-button {
+        background:rgb(253, 255, 242);;
+        color:black;
+        border-style: outset;
+        border-color:black;
+        border-width:5px;
+        height: 50px;
+        width: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font: size 20px;;
+        text-shadow: none;
+}
+.form-reset-button{
+    background:rgb(253, 255, 242);;
+        color:black;
+        border-style: outset;
+        border-color:black;
+        border-width:5px;
+        height: 50px;
+        width: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font: size 20px;;
+        text-shadow: none;
+}
+.font1{
+    font-family:"playfair display";
+    font-size:25px;
+}
+h6{
+    color:black;
+    font-size: 40px;
+    font-family:"playfair display";
+}
+
+</style>
+
+<script>
+    function Validate()
+    {
+        var fname = document.querySelector('input[name="fname"]').value;
+        var phno = document.querySelector('input[name="phno"]').value;
+        var email = document.querySelector('input[name="email"]').value;
+        var address = document.querySelector('input[name="address"]').value;
+        var lname = document.querySelector('input[name="lname"]').value;
+        
+       
+        if (fname == "" || phno == "" || email == "" || address ==""|| lname =="") {
+            alert('Please fill all the details');
+            return false;
+        }
+
+      
+        if (isNaN(phno)) {
+            alert('Phone Number should only contain numbers.');
+            return false;
+        }
+        if(phno.length!=10)
+        {
+            alert('phone number should contain only 10 numbers');
+            return false;
+        }
+
+        if (!email.includes('@') || !email.includes('.com')||!email.includes('gmail')) {
+            alert('invalid email');
+            return false;
+        }
+       
+        
+    }
+</script>
+    </head>
+    <body>
+
+        <div class="div1">
+        <div style="padding-top: 0%;" >
+            <div class='child'><h1 class="header" style="padding-top: 1px;">&nbsp;BLINK</h1></div>&nbsp;
+            
+            <div class='child'><p class="small">&nbsp;</p>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="child">
+<a href="part1.html" target="_self">HOME</a>
+
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="child">
+
+                <a href="about.html" target="_self">ABOUT</a>
+            </div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="Blog.html" target="_self">MERCH</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="gallery.html" target="_self">GALLERY</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="IPD.html" target="_self">INTERNATIONAL PHOTOGRAPHY DAY '23</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child" >
+    <a href="Events.html" target="_self">EVENTS</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child" >
+    <a href="contact.html" target="_self">CONTACT</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="socials.html" target="_self">SOCIALS</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="homepage.html" target="_self">Join BLINK</a>
+</div>&nbsp;&nbsp;&nbsp;
+<br>
+<br>
+</div>
+
+<div class="div2">
+    <img src="ticketbook.png" width="100%" height="800px">
+    <h1><center>Please fill out the form below</center></h1>
+    <div><center>
+    
+    <form onsubmit="return Validate()" action="thankticbook.html">
+        
+    <p>
+        <table>
+            <tr>
+                <td>First Name:<span style="color: grey;">(required)</span></td>&nbsp;&nbsp;
+                <td>Last Name</td>
+            </tr>
+            <tr>
+                <td><br><input type="text" name="fname" id="name" style="width: 210px;height: 45px ;border-radius: 5px;"></td>&nbsp;
+                <td>
+                   <br> <input type="text" name="lname" id="name" style="width: 210px;height: 45px ;border-radius: 5px;">
+                </td>
+            </tr>
+            <tr>
+                <td><br>Country:<span style="color: grey;">(required)</span></td>
+            </tr>
+            <tr>
+                <td><br>
+                <select name="country" value="please select" placeholder="select" id="country">
+                    <option value="none" selected disabled hidden>Select your Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Australia</option>
+                    <option>South Korea</option>
+                    <option>Japan</option>
+                    <option>Russia</option>
+                    <option>United Kingdom</option>
+                    <option>France</option>
+                    <option>Italy</option>
+                    <option>Paris</option>
+                    <option>Germany</option>
+                    <option>South Africa</option>
+                    <option>Saudi Arabia</option>
+                    <option>Other</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+<td><br>Email:&nbsp;<span style="color:grey;">(required)</span></td>
+            </tr>
+            <tr>
+                <td><br><input type="text" name="email" id="email" style="width: 290px;height: 45px ;border-radius: 5px;"></td>
+            </tr>
+            <tr>
+<td><br>Address:&nbsp;<span style="color:grey;">(required)</span></td>
+            </tr>
+            <tr>
+                <td><br><input type="text" name="address" id="address" style="width: 290px;height: 60px ;border-radius: 5px;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <br>Phone Number&nbsp;<span style="color:grey;">(required)</span>
+                </td>
+            </tr>
+            <tr>
+                <td><br><input type="text" name="phno" id="phno"style="width: 290px;height: 45px ;border-radius: 5px;"></td>
+            </tr>
+            
+            <tr>
+                <td><br>No of tickets</td>
+            </tr>
+            <tr>
+                <td><br><select name="country" value="please select" placeholder="select" id="country">
+                    <option value="none" selected disabled hidden>select no of tickets</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select></td>
+            </tr>
+            <br><br>
+            <tr>
+                <td><br>Are you a:</td>
+            </tr>
+            <tr>
+                <td><br><input type="radio" name="radiobutton" value="1">Presenter<br>
+                <input type="radio" name="radiobutton" value="2">Attendee</td>
+            </tr>
+            <tr>
+                <p style="font-size: 30px;"><span style="color: red">Fee for entry ticket: 13$<br>
+                Payment will be made at the venue of the event!</span></p>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td><br><br><input type="submit" name="submit" value="submit" class="form-submit-button" ></td>
+                <td><br><br><input type="reset" name="reset" value="Clear" class="form-reset-button"></td>
+            </tr>
+        </table>
+
+
+</form>
+</center>
+</div>
+<div>
+    <h6>Terms and conditions:</h6>
+    <p class="font1">
+1)Accomdations will not be provided for the attendees of the event.<br>
+2)As per Covid-19 protocols, as many international attendees will be present, it is mandatory for eveyrone to bring thier covid-19 vaccination certificate to the venue.<br>
+3)Blink is not responsible for your lost belongings or possesions. Please take care of your own possessions<br>
+4)On cancellation,there is no refund available.<br>
+5)Entry ticket is mandatory.The ticket must be shown at the time of payment.<br>
+    </p>
+
+    <br>
+    <br>
+    <br>
+<br>
+<p><a href="https://www.instagram.com/evabartosphotoart#"><img src="fineart1.png" height="140px"></a> <a href="https://www.instagram.com/throughlightandtime/#"><img src="astro_1.png" height="140px" width="140px"></a> <a href="https://www.instagram.com/harpy_hiroko/#"><img src="fineart2.png" height="140px"></a> <a href="https://www.instagram.com/abstract_.photography/"><img src="abstract.1.png" height="140px"></a> <a href="https://www.instagram.com/marvinjlee/#"><img src="fineart4.png" height="140px"></a> <a href="https://www.instagram.com/davidgarlandmakes/#"><img src="fineart3.png" height="140px"></a> <a href="https://www.instagram.com/larry88_keys/"><img src="abstract4.png" height="140px" width="135px"></a> <a href="https://www.instagram.com/tomascollignon/"><img src="abstract3.png" height="140px" ></a> <a href="https://www.instagram.com/abst.ractphotography/"><img src="abstract2.png" height="140px"></a> <a href="https://www.instagram.com/azzurriii/"><img src="landscape1.png" height="140px"></a> <a href="https://www.instagram.com/patricksvisuals/"><img src="landscape2.png" height="140px"></a> <a href="https://www.instagram.com/kiran.nagendra/"><img src="landscape3.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/jaka_ivancic/"><img src="landscape4.png" height="140px"></a> <a href="https://www.instagram.com/brownfashiongal/"><img src="fashion1.png" height="140px"></a> <a href="https://www.instagram.com/knikmanav/"><img src="journel1.png" height="140px"></a> <a href="https://www.instagram.com/amareazul_/"><img src="journal2.png" height="140px"></a> <a href="https://www.instagram.com/smilerom70/"><img src="journal3.png" height="140px"></a> <a href="https://www.instagram.com/michele_lapini_photo/"><img src="journal4.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/kazutoshi.nagata31/"><img src="astro_2.png" height="140px" width="200"></a></p>
+<br>
+<br>
+<p style="font-size: medium;text-align: center;">© 2022 BLINK. All Rights Reserved<br><a href="https://www.instagram.com/stevemccurryofficial/#"><img src="insta.png"></a> <a href="https://www.youtube.com/watch?v=tFxPDLt88L0"><img src="youtube.png"></a> <a href="https://www.facebook.com/photo/?fbid=470338827785937&set=a.213147040171785&__tn__=%3C"><img src="facebook.png"></a> </p>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

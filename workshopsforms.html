@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <head>
+        <title>Forms</title>
+        <link rel="icon" href="icon2.jpg" type="image/icon type">
+        <style>
+            body{
+               background-image:url('land.jpg');
+               font-family: 'Times New Roman', Times, serif;
+            }
+            select
+{
+    width:  40%;
+    height: 42px;
+}
+.form-submit-button {
+        background:rgb(253, 255, 242);;
+        color:black;
+        border-style: outset;
+        border-color:black;
+        border-width:5px;
+        height: 50px;
+        width: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font: size 20px;;
+        text-shadow: none;
+}
+.form-reset-button{
+    background:rgb(253, 255, 242);;
+        color:black;
+        border-style: outset;
+        border-color:black;
+        border-width:5px;
+        height: 50px;
+        width: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font: size 20px;;
+        text-shadow: none;
+}
+.center {
+  border: 5px solid;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+h1{
+    font-family: 'Playfair Display';
+}
+.child {
+      display: inline-block;
+    }
+    a:link,a:visited{
+    color:black;
+    font-size: 18px;
+    text-decoration: none;
+  }
+        </style>
+        <script>
+            function Validate()
+            {
+                var fname = document.querySelector('input[name="fname"]').value;
+                var phno = document.querySelector('input[name="phno"]').value;
+                var email = document.querySelector('input[name="email"]').value;
+                var address = document.querySelector('input[name="address"]').value;
+                var lname = document.querySelector('input[name="lname"]').value;
+    
+               
+                if (fname == "" || phno == "" || email == "" || address ==""|| lname =="") {
+                    alert('Please fill all the details');
+                    return false;
+                }
+    
+              
+                if (isNaN(phno)) {
+                    alert('Phone Number should only contain numbers.');
+                    return false;
+                }
+                if(phno.length!=10)
+                {
+                    alert('phone number should contain only 10 numbers');
+                    return false;
+                }
+    
+                if (!email.includes('@') || !email.includes('.com')) {
+                    alert('invalid email');
+                    return false;
+                }
+            }
+        </script>
+        
+    </head>
+    <body>
+        
+        
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Workshop Registration</h1>
+</p>
+<br><br>
+<div class="center">
+<form onsubmit="return Validate()" action="thankyou.html">
+   
+        <p>
+            <table>
+                <tr>
+                    <td>First Name:<span style="color: grey;">(required)</span></td>&nbsp;&nbsp;
+                    <td>Last Name</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="fname" id="name" style="width: 190px;height: 45px ;border-radius: 5px;"></td>&nbsp;&nbsp;
+                    <td>
+                        <input type="text" name="lname" id="name" style="width: 190px;height: 45px ;border-radius: 5px;">
+                    </td>
+                </tr>
+            </table>
+            <br>Country:&nbsp;<span style="color:grey;">(required)</span><br>
+            <select name="country" value="please select" placeholder="select" id="country">
+                <option value="none" selected disabled hidden>Select your Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Australia</option>
+                <option>South Korea</option>
+                <option>Japan</option>
+                <option>Russia</option>
+                <option>United Kingdom</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Paris</option>
+                <option>Germany</option>
+                <option>South Africa</option>
+                <option>Saudi Arabia</option>
+                <option>Other</option>
+            </select><br>
+            <br>Email:&nbsp;<span style="color:grey;">(required)</span><br>
+            <input type="text" name="email" id="email" style="width: 190px;height: 45px ;border-radius: 5px;">
+<br><br>
+Address:&nbsp;<span style="color:grey;">(required)</span><br>
+<input type="text" name="address" id="address" style="width: 290px;height: 60px ;border-radius: 5px;"><br><br>
+Phone Number&nbsp;<span style="color:grey;">(required)</span><br>
+<input type="text" name="phno" id="phno"style="width: 190px;height: 45px ;border-radius: 5px;"><br><br>
+<input type="submit" name="submit" value="submit" class="form-submit-button" >
+<input type="reset" name="reset" value="Clear" class="form-reset-button">
+</form>
+</div>
+<br><br>
+<a href="workshops.html" target="_self">GO BACK</a>
+
+
+    </body>
+</html>

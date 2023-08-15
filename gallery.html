@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+       .p1{
+            background-color:rgb(138, 154, 91);
+           
+           }
+           * {
+  box-sizing: border-box;
+}
+body {
+  background-color: #a89696;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row1 {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row1,
+.row1 > .column1 {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content1 {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color:white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+.some{
+  background-image: url("gall2.jpg");
+  color: white;
+}
+.some1{
+  background-image: url("gall2.jpg");
+  min-height:15cm; 
+  min-width:2cm;
+  color: white;
+}
+img {
+            transition :transform 0.3s;
+        }
+        img:hover {
+            transform : scale(1.2);
+        }
+
+      </style>
+    </head>
+    <body>
+       <link rel="icon" href="icon2.jpg" type="image/icon type">
+        <link rel="stylesheet" href="css1.css">
+    </head>
+    <body>
+      
+        <div class="p1">
+        <div>
+          <div class="some">
+            <div class='child'><h1 class="header" style="padding-top: 1px;">BLINK</h1></div>&nbsp;
+            
+            <div class='child'><p class="small">&nbsp;</p>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="child">
+<a href="part1.html" target="_self">HOME</a>
+
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="child">
+
+                <a href="about.html" target="self">ABOUT</a>
+            </div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="Blog.html" target="_self">MERCH</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="gallery.html" target="_self">GALLERY</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="IPD.html" target="_self">INTERNATIONAL PHOTOGRAPHY DAY '23</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child" >
+    <a href="EVENTS.html" target="_self">EVENTS</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child" >
+    <a href="contact.html" target="_self">CONTACT</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="socials.html" target="_self">SOCIALS</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="homepage.html" target="_self">Join BLINK</a>
+  </div>
+</div>&nbsp;&nbsp;&nbsp;
+        </div>
+      
+        <center>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Fineart')"> Fineart</button>
+  <button class="btn" onclick="filterSelection('abstract')"> Abstract</button>
+  <button class="btn" onclick="filterSelection('Landscape')"> Landscape</button>
+  <button class="btn" onclick="filterSelection('Astrophotography')"> Astrophotography</button>
+  <button class="btn" onclick="filterSelection('Fashion')"> Fashion</button>
+  <button class="btn" onclick="filterSelection(' Digital')"> Digital</button>
+  <button class="btn" onclick="filterSelection('Photojournalism')">Photojournalism</button>
+</div>
+</center>
+<!-- Portfolio Gallery Grid -->
+<div class="row1">
+  <div class="column1 Fineart">
+    <div class="content1">
+      <img src="fa1.jpg" alt="Mountains" style="width:100%">
+      <h4>Emotion</h4>
+      <p>picture credits:alexa</p>
+    </div>
+  </div>
+  <div class="column1 Fineart">
+    <div class="content1">
+      <img src="fa2.jpg" alt="Lights" style="width:100%">
+      <h4>Building</h4>
+      <p>picture credits:john</p>
+    </div>
+  </div>
+  <div class="column1 Fineart">
+    <div class="content1">
+      <img src="fa3.jpg" alt="Nature" style="width:100%">
+      <h4>Lonely Tree</h4>
+      <p>picture credits:alice</p>
+    </div>
+  </div>
+  <div class="column1 Fineart">
+    <div class="content1">
+      <img src="fa4.jpg" alt="Nature" style="width:100%">
+      <h4>Girl</h4>
+      <p>picture credits:prynsh</p>
+    </div>
+  </div>
+  <div class="column1 Fineart">
+    <div class="content1">
+      <img src="fa5.jpg" alt="Nature" style="width:100%">
+      <h4>stairs</h4>
+      <p>picture credits:dvari</p>
+    </div>
+  </div>
+  <div class="column1 Fineart">
+    <div class="content1">
+      <img src="fa6.jpg" alt="Nature" style="width:100%">
+      <h4>street</h4>
+      <p>picture credits:kyathi</p>
+    </div>
+  </div>
+
+  <div class="column1 abstract">
+    <div class="content1">
+      <img src="ap1.jpg" alt="Car" style="width:100%">
+      <h4>Leaf</h4>
+      <p>picture credits:Eniyan</p>
+    </div>
+  </div>
+  <div class="column1 abstract">
+    <div class="content1">
+      <img src="ap2.jpg" alt="Car" style="width:100%">
+      <h4>Umbrella</h4>
+      <p>picture credits:yagnshi</p>
+    </div>
+  </div>
+  <div class="column1 abstract">
+    <div class="content1">
+      <img src="ap3.jpg" alt="Car" style="width:100%">
+      <h4>water</h4>
+      <p>picture credits:alice</p>
+    </div>
+  </div>
+  <div class="column1 abstract">
+    <div class="content1">
+      <img src="ap4.jpg" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+      <p>picture credits:John</p>
+    </div>
+  </div>
+  <div class="column1 abstract">
+    <div class="content1">
+      <img src="ap5.jpg" alt="Car" style="width:100%">
+      <h4>Wall</h4>
+      <p>picture credits:dvari</p>
+    </div>
+  </div>
+  <div class="column1 abstract">
+    <div class="content1">
+      <img src="ap6.jpg" alt="Car" style="width:100%">
+      <h4>Tree</h4>
+      <p>picture credits:prynsh</p>
+    </div>
+  </div>
+
+  <div class="column1 Landscape">
+    <div class="content1">
+      <img src="ls1.jpg" alt="landscape" style="width:100%">
+      <h4>River</h4>
+      <p>Picture credits:devika<credits:devika></p>
+    </div>
+  </div>
+  <div class="column1 Landscape">
+    <div class="content1">
+      <img src="ls2.jpg" alt="landscape" style="width:100%">
+      <h4>sunset</h4>
+      <p>Picture credits:sam</p>
+    </div>
+  </div>
+  <div class="column1 Landscape">
+    <div class="content1">
+      <img src="ls3.jpg" alt="landscape" style="width:100%">
+      <h4>Fields</h4>
+      <p>Picture credits:ria</p>
+    </div>
+  </div>
+  <div class="column1 Landscape">
+    <div class="content1">
+      <img src="ls4.jpg" alt="landscape" style="width:100%">
+      <h4>Village Road</h4>
+      <p>Picture credits:ravyasi</p>
+    </div>
+  </div>
+  <div class="column1 Landscape">
+    <div class="content1">
+      <img src="ls5.jpg" alt="landscape" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Picture credits:Jack</p>
+    </div>
+  </div>
+  <div class="column1 Landscape">
+    <div class="content1">
+      <img src="ls6.jpg" alt="landscape" style="width:100%">
+      <h4>Lake</h4>
+      <p>Picture credits:samyu</p>
+    </div>
+  </div>
+  
+
+  <div class="column1 Astrophotography">
+    <div class="content1">
+      <img src="a1.jpg" alt="landscape" style="width:100%">
+      <h4>Constellation</h4>
+      <p>Picture credits:sam<credits:devika></p>
+    </div>
+  </div>
+  <div class="column1 Astrophotography">
+    <div class="content1">
+      <img src="a2.jpg" alt="landscape" style="width:100%">
+      <h4>sunset</h4>
+      <p>Picture credits:yansh</p>
+    </div>
+  </div>
+  <div class="column1 Astrophotography">
+    <div class="content1">
+      <img src="a3.jpg" alt="landscape" style="width:100%">
+      <h4>Banks of River</h4>
+      <p>Picture credits:ria</p>
+    </div>
+  </div>
+  <div class="column1 Astrophotography">
+    <div class="content1">
+      <img src="a4.jpg" alt="landscape" style="width:100%">
+      <h4>Pinwheel galaxy</h4>
+      <p>Picture credits:ravyasi</p>
+    </div>
+  </div>
+  <div class="column1 Astrophotography">
+    <div class="content1">
+      <img src="a5.jpg" alt="landscape" style="width:100%">
+      <h4>sparkle galaxy</h4>
+      <p>Picture credits:Jack</p>
+    </div>
+  </div>
+  <div class="column1 Astrophotography">
+    <div class="content1">
+      <img src="a6.jpg" alt="landscape" style="width:100%">
+      <h4>Moon</h4>
+      <p>Picture credits:samyu</p>
+    </div>
+  </div>
+
+  <div class="column1 Fashion">
+    <div class="content1">
+      <img src="f1.jpg" alt="landscape" style="width:100%">
+      <h4>red doll</h4>
+      <p>Picture credits:sam<credits:devika></p>
+    </div>
+  </div>
+  <div class="column1 Fashion">
+    <div class="content1">
+      <img src="f2.jpg" alt="landscape" style="width:100%">
+      <h4>all red</h4>
+      <p>Picture credits:yansh</p>
+    </div>
+  </div>
+  <div class="column1 Fashion">
+    <div class="content1">
+      <img src="f3.jpg" alt="landscape" style="width:100%">
+      <h4>courage</h4>
+      <p>Picture credits:ria</p>
+    </div>
+  </div>
+  <div class="column1 Fashion">
+    <div class="content1">
+      <img src="f4.jpg" alt="landscape" style="width:100%">
+      <h4>custom</h4>
+      <p>Picture credits:ravyasi</p>
+    </div>
+  </div>
+  <div class="column1 Fashion">
+    <div class="content1">
+      <img src="f5.jpg" alt="landscape" style="width:100%">
+      <h4>Girl in pink</h4>
+      <p>Picture credits:Jack</p>
+    </div>
+  </div>
+  <div class="column1 Fashion">
+    <div class="content1">
+      <img src="f6.jpg" alt="landscape" style="width:100%">
+      <h4>Street</h4>
+      <p>Picture credits:samyu</p>
+    </div>
+  </div>
+
+
+  <div class="column1 Digital">
+    <div class="content1">
+      <img src="d1.jpg" alt="Mountains" style="width:100%">
+      <h4>Man</h4>
+      <p>picture credits:alexa</p>
+    </div>
+  </div>
+  <div class="column1 Digital">
+    <div class="content1">
+      <img src="d2.jpg" alt="Lights" style="width:100%">
+      <h4>Flower</h4>
+      <p>picture credits:john</p>
+    </div>
+  </div>
+  <div class="column1 Digital">
+    <div class="content1">
+      <img src="d3.jpg" alt="Nature" style="width:100%">
+      <h4>Bunch of Trees</h4>
+      <p>picture credits:alice</p>
+    </div>
+  </div>
+  <div class="column1 Digital">
+    <div class="content1">
+      <img src="d4.jpg" alt="Nature" style="width:100%">
+      <h4>Digital Art</h4>
+      <p>picture credits:prynsh</p>
+    </div>
+  </div>
+  <div class="column1 Digital">
+    <div class="content1">
+      <img src="d5.jpg" alt="Nature" style="width:100%">
+      <h4>Flower camera</h4>
+      <p>picture credits:dvari</p>
+    </div>
+  </div>
+  <div class="column1 Digital">
+    <div class="content1">
+      <img src="d6.jpg" alt="Nature" style="width:100%">
+      <h4>Flower</h4>
+      <p>picture credits:kyathi</p>
+    </div>
+  </div>
+
+  <div class="column1 Photojournalism">
+    <div class="content1">
+      <img src="pj1.jpg" alt="Car" style="width:100%">
+      <h4>Children</h4>
+      <p>picture credits:Eniyan</p>
+    </div>
+  </div>
+  <div class="column1 Photojournalism">
+    <div class="content1">
+      <img src="pj2.jpg" alt="Car" style="width:100%">
+      <h4>Fire Accident</h4>
+      <p>picture credits:yagnshi</p>
+    </div>
+  </div>
+  <div class="column1 Photojournalism">
+    <div class="content1">
+      <img src="pj3.jpg" alt="Car" style="width:100%">
+      <h4>ForestKingDeath</h4>
+      <p>picture credits:alice</p>
+    </div>
+  </div>
+  <div class="column1 Photojournalism">
+    <div class="content1">
+      <img src="pj4.jpg" alt="Car" style="width:100%">
+      <h4>scarcity</h4>
+      <p>picture credits:John</p>
+    </div>
+  </div>
+  <div class="column1 Photojournalism">
+    <div class="content1">
+      <img src="pj5.jpg" alt="Car" style="width:100%">
+      <h4>protest</h4>
+      <p>picture credits:dvari</p>
+    </div>
+  </div>
+  <div class="column1 Photojournalism">
+    <div class="content1">
+      <img src="pj6.jpg" alt="Car" style="width:100%">
+      <h4>Hardwork</h4>
+      <p>picture credits:prynsh</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column1");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<div class="some1">
+  <center>
+  <form action="/action_page.php" class="container2">
+    <br>
+    <h2><i>Thanks for visiting our page</i></h2>
+    <h2>Would like to know your views regarding our work</h2> 
+    <textarea rows="20" cols="100" style="background-color: rgb(184, 184, 184);" required></textarea>
+    <br>
+    <button type="submit" formaction="feedback.html" >submit</button>
+  </center>
+  </form>
+</div>
+<br>
+<br>
+<br>
+<p><a href="https://www.instagram.com/evabartosphotoart#"><img src="fineart1.png" height="140px"></a> <a href="https://www.instagram.com/throughlightandtime/#"><img src="astro_1.png" height="140px" width="140px"></a> <a href="https://www.instagram.com/harpy_hiroko/#"><img src="fineart2.png" height="140px"></a> <a href="https://www.instagram.com/abstract_.photography/"><img src="abstract.1.png" height="140px"></a> <a href="https://www.instagram.com/marvinjlee/#"><img src="fineart4.png" height="140px"></a> <a href="https://www.instagram.com/davidgarlandmakes/#"><img src="fineart3.png" height="140px"></a> <a href="https://www.instagram.com/larry88_keys/"><img src="abstract4.png" height="140px" width="135px"></a> <a href="https://www.instagram.com/tomascollignon/"><img src="abstract3.png" height="140px" ></a> <a href="https://www.instagram.com/abst.ractphotography/"><img src="abstract2.png" height="140px"></a> <a href="https://www.instagram.com/azzurriii/"><img src="landscape1.png" height="140px"></a> <a href="https://www.instagram.com/patricksvisuals/"><img src="landscape2.png" height="140px"></a> <a href="https://www.instagram.com/kiran.nagendra/"><img src="landscape3.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/jaka_ivancic/"><img src="landscape4.png" height="140px"></a> <a href="https://www.instagram.com/brownfashiongal/"><img src="fashion1.png" height="140px"></a> <a href="https://www.instagram.com/knikmanav/"><img src="journel1.png" height="140px"></a> <a href="https://www.instagram.com/amareazul_/"><img src="journal2.png" height="140px"></a> <a href="https://www.instagram.com/smilerom70/"><img src="journal3.png" height="140px"></a> <a href="https://www.instagram.com/michele_lapini_photo/"><img src="journal4.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/kazutoshi.nagata31/"><img src="astro_2.png" height="140px" width="160"></a></p>
+<br>
+<br>
+<p style="font-size: medium;text-align: center;">© 2022 BLINK. All Rights Reserved<br><a href="https://www.instagram.com/stevemccurryofficial/#"><img src="insta.png"></a> <a href="https://www.youtube.com/watch?v=tFxPDLt88L0"><img src="youtube.png"></a> <a href="https://www.facebook.com/photo/?fbid=470338827785937&set=a.213147040171785&__tn__=%3C"><img src="facebook.png"></a> </p>
+
+    </body>
+</html>

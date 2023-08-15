@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stack Operations using Queue</title>
+  <style>
+    body{
+      background-color: rgb(189, 95, 210);
+    }
+
+    #stack-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: 200px;
+      border: 5px solid black;
+      border-radius: 10px;
+      border-style: double;
+      margin-bottom: 20px;
+    }
+
+    .stack-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      height: 40px;
+      border: 1.5px solid black;
+      background-color: lightcoral;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: lightgreen;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Demonstration of Stack Operations using Queue</h1>
+  
+  <div id="stack-container">
+    <div id="stack" class="stack"></div>
+    <button onclick="pushItem()">Push</button>
+    <button onclick="popItem()">Pop</button>
+    <button onclick="peekItem()">Peek</button>
+    <button onclick="reset()">RESET</button>
+  </div>
+
+  <script>
+    // Queue implementation using JavaScript Array
+    class Queue {
+      constructor() {
+        this.queue = [];
+      }
+
+      enqueue(value) {
+        this.queue.push(value);
+      }
+
+      dequeue() {
+        if (this.isEmpty()) {
+          return "Queue is empty";
+        }
+        return this.queue.shift();
+      }
+
+      isEmpty() {
+        return this.queue.length === 0;
+      }
+    }
+
+    // Stack implementation using two queues
+    class Stack {
+      constructor() {
+        this.queue1 = new Queue();
+        this.queue2 = new Queue();
+      }
+
+      push(value) {
+        while (!this.queue1.isEmpty()) {
+          this.queue2.enqueue(this.queue1.dequeue());
+        }
+
+        this.queue1.enqueue(value);
+
+        while (!this.queue2.isEmpty()) {
+          this.queue1.enqueue(this.queue2.dequeue());
+        }
+
+        displayStack();
+      }
+
+      pop() {
+        if (this.queue1.isEmpty()) {
+          return "Stack is empty";
+        }
+        return this.queue1.dequeue();
+      }
+
+      peek() {
+        if (this.queue1.isEmpty()) {
+          return "Stack is empty";
+        }
+        return this.queue1.queue[0];
+      }
+
+      reset() {
+        this.queue1 = new Queue();
+        this.queue2 = new Queue();
+        displayStack();
+      }
+    }
+
+    // Create a new stack object
+    const stack = new Stack();
+
+    function displayStack() {
+      const stackContainer = document.getElementById("stack");
+      stackContainer.innerHTML = "";
+
+    for (let i = stack.queue1.queue.length - 1; i >= 0; i--) {
+        const stackItem = document.createElement("div");
+        stackItem.className = "stack-item";
+
+    // Add margin left for the first stack item
+        if (i === stack.queue1.queue.length - 1) {
+        stackItem.style.marginLeft = "5px";
+        }
+
+    // Add margin right for the last stack item
+        if (i === 0) {
+        stackItem.style.marginRight = "5px";
+        }
+
+        stackItem.innerText = stack.queue1.queue[i];
+        stackContainer.appendChild(stackItem);
+  }
+}
+
+
+    function pushItem() {
+      const inputValue = prompt("Enter a value to push:");
+      stack.push(inputValue);
+    }
+
+    function popItem() {
+      const poppedValue = stack.pop();
+      alert("Popped value: " + poppedValue);
+      displayStack();
+    }
+
+    function peekItem() {
+      const peekedValue = stack.peek();
+      alert("Peeked value: " + peekedValue);
+    }
+
+    function reset() {
+      stack.reset();
+    }
+
+    displayStack();
+  </script>
+</body>
+</html>

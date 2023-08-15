@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <header>
+      
+      <a href="bascis.html"><h2>BLINK STORE</h2></a>
+      <h1>EBOOK STORE</h1>
+      <a href="camstore.html"><h2>CAM STORE</h2></a>
+    </header>
+    <style>
+    :root {
+    --color-primary: purple;
+    --color-white: violet;
+    --color-black-1: #212b38;
+  }
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+    
+  }
+  
+  .logo span {
+    color: var(--color-primary);
+  
+  }
+  
+  .menu-bar {
+    background-color: var(--color-black);
+    height: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+    margin-top: +50px;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container
+{
+  position: relative;
+  
+  width: 900px;
+  display:flex;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+  padding: 50px;
+  padding-top: 2px;
+
+}
+
+.container .menu-bar
+{
+  background-color: white;
+
+}
+
+.container .menu-bar:after
+{
+  background-color: white;
+  content: '';
+    clear: both;
+    display: block;
+}
+.container .menu-bar ul 
+{
+  background-color: white;
+  list-style: none;
+  margin: 0; 
+  padding: 6px 10px;
+}
+.container .menu-bar > ul > li
+{
+  background-color: white;
+  float: left;
+  position: relative;
+  padding: 15px 10px;
+}
+
+.container .menu-bar ul li a
+{
+  background-color: white;
+  list-style: none;
+  text-decoration: none;
+    color: black;
+    display: block;
+    padding: 7px 10px;
+}
+
+.container .menu-bar ul li:hover a
+{
+  background: white;
+  color: black;
+  padding: 6px 10px;
+}
+
+.container .menu-bar ul li a:hover
+{
+  background: white;
+  color: royalblue;
+  padding: 6px 10px;
+}
+
+.container .menu-bar ul ul
+{
+  background-color: white;
+  list-style: none;
+  position: absolute;
+    padding: 0;
+    min-width: 160px;
+    min-height: min-content;
+    display: none;
+    top: 100%;
+    left: 0;
+    
+}
+
+.container .menu-bar ul li:hover > ul
+{
+  background-color: white;
+  display: block;
+}
+
+.container .menu-bar ul ul li:hover a
+{
+  background: white;
+  color: royalblue;
+}
+
+.container .menu-bar ul ul li
+{
+  background-color: white;
+  list-style: none;
+  position: relative;
+}
+
+
+
+
+
+.container .card
+{
+  position: relative;
+  max-width: 325px;
+  height: 215px;
+  background: #fff;
+  margin: 50px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 150px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  
+
+}
+
+.container .card:hover
+{
+  height: 500px;
+}
+
+.container .card .imgbx
+{
+  position: relative;
+  width: 260px;
+  height: 172px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+.container .card .imgbx img
+{
+  max-width: 100%;
+  border-radius: 4px;
+
+}
+
+
+
+.container .card .content
+{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+
+.container .card:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -65px;
+  transition-delay: 0.3s;
+
+}
+
+.container .card .tag1
+{
+  position: relative;
+  top: -60px;
+  text-align: center;
+  
+
+}
+
+.container .card .tag2
+{
+  position: relative;
+  top: -55px;
+  text-align: center;
+  
+}
+
+.container .card .tag3
+{
+  position: relative;
+  top: -55px;
+  text-align: center;
+  
+}
+
+.title1
+{
+ padding: 100px 50px 50px 50px;
+ margin: auto;
+ width: 80%;
+ text-align: center;  
+ background-color: white;
+ padding: 6px 10px;
+}
+
+.container .card .tag4
+{
+  position: relative;
+  top: -57px;
+  text-align: center;
+  
+}
+
+.container .card .tag5
+{
+  position: relative;
+  top: -57px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.container .card .tag6
+{
+  position: relative;
+  top: -57px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.container .card .tag7
+{
+  position: relative;
+  top: -57px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.container .card .tag8
+{
+  position: relative;
+  top: -57px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.container .card .tag9
+{
+  position: relative;
+  top: -50px;
+  text-align: center;
+  padding-bottom: 5px;
+  
+}
+
+.container .card .tag10
+{
+  position: relative;
+  top: -57px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.container .card .tag11
+{
+  position: relative;
+  top: -57px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.container .card .tag12
+{
+  position: relative;
+  top: -50px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.container .card .content a
+{
+  position: relative;
+  top: 40px;
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background:rgba(47, 0, 255, 0.61);
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container .card .content a:hover
+{
+  background: yellow;
+}
+
+.container .row
+{
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.container .col
+{
+    flex-basis: 50%;
+
+}
+
+.container .c
+{
+  width: 400px;
+  height: 460px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-color: white;
+  position: relative;
+  top: -50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  
+}
+
+.container .c img
+{
+    max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .c:hover
+{
+    transform: translateY(-30px);
+    transition: 0.3s;
+}
+
+.container .c .h2
+{
+    color: black;
+    text-shadow: 0 0 5px #999;
+    position: relative;
+    top: -50px;
+}
+
+.container .c .text
+{
+    position: relative;
+    top: -15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.container .row2
+{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.container .col2
+{
+    flex-basis: 50%;
+
+}
+
+.container .row3
+{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.container .col3
+{
+    flex-basis: 50%;
+
+}
+
+.box
+{
+    position: relative;
+    width: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: 200px;
+    left: 50px;
+}
+
+.box::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: rgb(138, 52, 52);
+   z-index: -1;
+}
+
+.box::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box::before, .box::after
+{
+   background: linear-gradient(235deg,#00bcd4,#060c21,#00bcd4);
+}
+
+.contents
+{
+    padding: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: left;
+}
+
+
+.box2
+{
+    position: relative;
+    width: 650px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: 300px;
+    left: 50px;
+}
+
+.box2::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box2::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box2::before, .box2::after
+{
+   background: linear-gradient(235deg,#00bcd4,#060c21,#00bcd4);
+}
+
+.box3
+{
+    position: relative;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: 800px;
+    left: 50px;
+}
+
+.box3::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box3::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box3::before, .box3::after
+{
+   background: linear-gradient(235deg,#00bcd4,#060c21,#00bcd4);
+}
+
+.box4
+{
+    position: relative;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: 900px;
+    left: 50px;
+}
+
+.box4::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box4::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box4::before, .box4::after
+{
+   background: linear-gradient(235deg,#00bcd4,#060c21,#00bcd4);
+}
+
+.box5
+{
+    position: relative;
+    width: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: 1300px;
+    left: 50px;
+}
+
+.box5::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box5::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box5::before, .box5::after
+{
+   background: linear-gradient(235deg,#00bcd4,#060c21,#00bcd4);
+}
+
+.box6
+{
+    position: relative;
+    width: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: 1400px;
+    left: 50px;
+}
+
+.box6::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box6::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box6::before, .box6::after
+{
+   background: linear-gradient(235deg,#00bcd4,#060c21,#00bcd4);
+}
+
+.box7
+{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: -2900px;
+    left: 50px;
+}
+
+.box7::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box7::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box7::before, .box7::after
+{
+    background: linear-gradient(235deg,royalblue,#060c21,royalblue);
+}
+
+.box8
+{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: -1300px;
+    left: 50px;
+}
+
+.box8::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box8::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box8::before, .box8::after
+{
+    background: linear-gradient(235deg,royalblue,#060c21,royalblue);
+}
+
+.box9
+{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    top: -100px;
+    left: 50px;
+    
+}
+
+.box9::before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.box9::after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+
+}
+
+
+.box9::before, .box9::after
+{
+   background: linear-gradient(235deg,royalblue,#060c21,royalblue);
+}
+
+
+
+.col .c .text a
+{
+  position: relative;
+  top: -20px;
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background:none;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.col .c .text a:hover
+{
+  color: rgb(133, 96, 202);
+}
+.title1{
+    color: rgb(209, 205, 205);
+    background:linear-gradient(violet,rgb(175, 87, 175),rgb(85, 25, 85));
+}
+.tag1{
+    color: black
+}
+.tag2{
+    color: black
+}
+.tag3{
+    color: black
+}
+.tag4{
+    color: black
+}
+.tag5{
+    color: black
+}
+.tag6{
+    color: black
+}
+.tag7{
+    color: black
+}
+.tag8{
+    color: black
+}
+body{
+    background-image:url("codebg1.jpg");
+}
+   
+a:link,a:visited{
+    color:white;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .container{
+    width:1000px;
+    margin:auto;
+    transition:0.5s;
+}
+    </style>
+
+  </head>
+  <body class="">
+    <div class="container">
+    <center>
+    <!--courses-->
+        <div class="container">
+            <div  class="title1">
+            <h1>Available E-Books</h1>
+          </div>
+          <br/>
+            <div class="card">
+              <div class="imgbx">
+                <img src="https://static.wixstatic.com/media/db53e4_4bfe673221f5458a90e78a7238a8ac73.jpg/v1/fill/w_420,h_300,al_c,lg_1,q_80/db53e4_4bfe673221f5458a90e78a7238a8ac73.webp" border="1" height="173px" width="265px" >
+              </div>
+              <div class="tag1">
+                <h2>From Ordinary to Extraordinary: Enhance Your Landscape Shots</h2>
+              </div>
+              <div class="content">
+                
+                <p>One thing - you'll need to sign up with Hot Pixels. This won't cost you a cent, and you'll get access to eBooks, video training and other cool content to kick-start your photography - you deserve it!</p>
+                <a target="_blank" href="https://www.hotpixels.co.nz/landing-1a">Check it out</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imgbx">
+                <img height="173px" width="265px"  src="https://www.photowhoa.com/2015/wp-content/uploads/2014/11/Landscape-photography.jpg">
+              </div>
+              <div class="tag2">
+                <h2>The Best Landscape Photographers Collective Vol. 1</h2>
+              </div>
+              <div class="content">
+                
+                <p>
+                  Landscape Photography is a challenge to face the world and capture it.
+
+It is how we share the beauty of our world. Expanse, color, shadow and light, calling us back to nature, telling us to illuminate what’s out there.
+                </p>
+                <a target="_blank" href="https://www.photowhoa.com/deals/landscape/?ap_id=34cc90f6&utm_source=photographyspark&utm_medium=post&utm_campaign=9-free-ebooks">Check it out</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="imgbx">
+                <img height="173px" width="265px" src="https://th.bing.com/th/id/OIP.lmyd6LvrstLWOuUmz00y8wHaE7?pid=ImgDet&rs=1">
+              </div>
+              <div class="tag3">
+                <h2>The Street Photographer’s Collective Vol. 1</h2>
+              </div>
+              <div class="content">
+                
+                <p>
+                  A collection of the world’s best documentary, fine art, and street photographers.
+It is energetic. Gritty. In your face and brutally honest. It is a genre of photography not for the faint of heart. Or the unsure. These are images that look for that decisive moment in the chaos. If you are a street photographer, this collective is for you.
+                </p>
+                <a target="_blank" href="https://www.photowhoa.com/deals/street-photographer/?ap_id=34cc90f6&utm_source=photographyspark&utm_medium=post&utm_campaign=9-free-ebooks">Check it out</a>
+              </div>
+            </div>
+  
+            
+            <br>
+  
+            <div class="card">
+              <div class="imgbx">
+                <img height="173px" width="265px" src="https://www.photowhoa.com/2015/wp-content/uploads/2014/11/DSLR-guide.jpg">
+              </div>
+              <div class="tag4">
+                <h2>DSLR Cinematography Guide by Ryan Koo</h2>
+              </div>
+            <div class="content">
+              <p>
+                DSLR cinematography is one of the best abilities of DSLR due to which thousands of indie filmmakers now have the financial ability to make films. That’s because DSLR cameras have amazing low-light capabilities and can produce incredibly gorgeous focus effects.
+              </p>
+              <a target="_blank" href="https://www.photowhoa.com/deals/dslr_cinematography_guide/?ap_id=34cc90f6&utm_source=photographyspark&utm_medium=post&utm_campaign=9-free-ebooks">Check it out</a>
+            </div>
+            </div>
+  
+            <div class="card">
+              <div class="imgbx">
+                <img height="173px" width="265px"  src="https://www.photowhoa.com/2015/wp-content/uploads/2021/05/Colliers-night-photography.jpg">
+              </div>
+              <div class="tag5">
+                <h2>"Through the Night's Kaleidoscope"</h2>
+              </div>
+            <div class="content">
+              <p>
+                Learn to capture the milky way, twilights, different moon phases, star trails and a lot more. Provides a concise summary of what you need to know about taking the best images at night.
+              </p>
+              <a target="_blank" href="https://www.photowhoa.com/deals/introduction-night-photography/?ap_id=34cc90f6&utm_source=photographyspark&utm_medium=post&utm_campaign=9-free-ebooks">Check it out</a>
+            </div>
+            </div>
+  
+            <div class="card">
+              <div class="imgbx">
+                <img height="173px" width="265px"  src="https://www.photowhoa.com/2015/wp-content/uploads/2019/06/Alex-Coghes.png">
+              </div>
+              <div class="tag6">
+                <h2>"Capturing the City's Rhythm"</h2>
+              </div>
+            <div class="content">
+              <p>
+                77 Pages on hands-on instruction with real inspiration for street photographers.The “must haves” for good street photography.
+                An in-depth tutorial on the effective use of Zone Focus to capture your subjects and much more.
+              </p>
+              <a target="_blank" href="https://www.photowhoa.com/deals/street-photography-books/?sscid=51k5_1256sm&utm_source=ShareASale&utm_medium=Affiliate">Check it out</a>
+            </div>
+            </div>
+  
+            
+  
+            
+            <br/>
+  
+            <div class="card">
+              <div class="imgbx">
+                <img height="173px" width="265px" src="https://www.photowhoa.com/2015/wp-content/uploads/2020/12/Portrait-collective.jpg">
+              </div>
+              <div class="tag7">
+                <h2>The Professional Portrait Photographers Collective Vol. 1</h2>
+              </div>
+              <div class="content">
+                
+                <p>Learn techniques & advice from some of the most renowned portrait photographers in the world. It’s a collection of images and conversation engaged with the art of portraiture, featuring photographers willing to examine what’s unknowable. </p>
+                <a target="_blank" href="https://www.photowhoa.com/deals/portrait/?ap_id=34cc90f6&utm_source=photographyspark&utm_medium=post&utm_campaign=9-free-ebooks">Check it out</a>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="imgbx">
+                <img height="173px" width="265px" src="https://theme.zdassets.com/theme_assets/9300855/40f8fecd04a2dc33feec7255cb82734f21faa1d4.png" border="1">
+              </div>
+              <div class="tag8">
+                <h2>"Books That Won't Break Your Budget"</h2>
+              </div>
+              <div class="content">
+                
+                <p>
+                  Instantly download 250+ free PDF photography books today.
+                </p>
+                <a target="_blank" href="https://photzy.com/free-photography-ebooks/">Check it out</a>
+              </div>
+            </div>
+            
+  
+          </div>
+        </center>
+    
+  </body>
+</html>

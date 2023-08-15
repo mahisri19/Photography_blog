@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Bacasime+Antique:regular);
+
+
+.div1{
+    background-color:rgb(38, 51, 24);
+    color:antiquewhite;
+    
+}
+body{
+    font-family:'playfair Display';
+}
+.header{
+    text-align:left;
+    color: antiquewhite;
+    font-size:70px;
+  }
+    .child {
+      display: inline-block;
+    }
+    .small{
+  text-align:left;
+    color:antiquewhite;
+    font-size:20px;
+    }
+    a:link,a:visited{
+      color:antiquewhite;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    h1{
+font-size: 45px;
+text-align: center;
+    }
+.centre{
+    text-align: center;
+    font-size: 20px;
+}
+.c2{
+  text-align: center;
+    font-size: 35px;
+}
+.div2{
+  background-color: rgb(253, 255, 242);
+  font-family:'Quicksand';
+  color: black;
+}
+h4{
+  font-size:50px;
+text-decoration: none;
+font-family:'playfair display';
+text-shadow: none;
+}
+table{
+  border-spacing: 35px 10px;
+  padding: 0 35px 0 0;
+}
+h6{
+font-size: 30px; 
+text-decoration: none;
+font-family:'playfair display';
+text-shadow: none; 
+}
+.speak{
+  font-size: 30px;
+  font-family:'playfair display';
+}
+.font1{
+  font-family:'Bacasime Antique';
+  font-size: 22px;
+}
+button{
+  background-color:rgb(38, 51, 24);
+  color:antiquewhite;
+  font-size: 12px;
+  height: 70px;
+  width: 140px;
+  font-family: 'playfair display';
+}
+.button2{
+  background-color:antiquewhite;
+  color:rgb(38, 51, 24);
+  font-size: 12px;
+  height: 70px;
+  width: 140px;
+  font-family: 'playfair display';
+}
+img{transition: transform 0.3s;}
+        
+        img:hover{transform : scale(1.2);}
+        input[type=submit] {
+            background-color: beige;
+            color:black;
+        }
+

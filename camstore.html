@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+      * {
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+}
+
+ header {
+ width:100%;
+background-image: url("camstorebg1.jpg");
+   
+}
+
+ .heading ul {
+     display:flex;
+   
+}
+
+.logo a {
+    color:white;
+    transition-duration: 1s;
+    font-weight: 800;
+    
+}
+
+.logo a:hover {
+   color:rgb(197, 121, 207);
+    transition-duration: 1s;
+    
+}
+
+.heading ul li {
+    list-style: none;
+   
+}
+
+.heading ul li a {
+    margin:5px;
+     text-decoration: none;
+    color:black;
+    font-weight: 500;
+    position:relative;
+   color:white;
+     margin:2px 14px;
+    font-size: 18px;
+    transition-duration: 1s;
+   
+}
+
+.heading ul li a:active {
+     color:rgb(46, 9, 41);
+    
+}
+
+.heading ul li a:hover {
+   color:rgb(197, 121, 207);
+     transition-duration: 1s;
+    
+}
+
+ .heading ul li a::before {
+     content:'';
+     height:2px;
+    width:0px;
+    position:absolute;
+    left:0;
+     bottom:0;
+     background-color: white;
+     transition-duration: 1s;
+    
+}
+
+ .heading ul li a:hover::before {
+     width:100%;
+     transition-duration: 1s;
+    background-color:rgb(197, 121, 207);
+    
+}
+
+ #input {
+    height:30px;
+     width:300px;
+    text-decoration: none;
+     border:0px;
+    padding:5px;
+    
+}
+
+.logo a {
+   color: white;
+     font-size: 35px;
+    font-weight: 500;
+    text-decoration:none;
+   
+}
+
+ion-icon {
+    width:30px;
+     height:30px;
+     background-color: white;
+    color:black;
+   
+}
+
+ion-icon:hover {
+   cursor: pointer;
+   
+}
+
+.search a {
+   display:flex;
+   
+}
+
+header a ion-icon {
+    position:relative;
+    right:3px;
+   
+}
+
+ .img-slider img {
+    height:720px;
+    width:1080px;
+    
+}
+
+ @keyframes slide {
+ 0% {
+      left:0px;
+    
+    }
+
+     15% {
+       left:0px;
+      
+    }
+
+     20% {
+       left:-1080px;
+       
+    }
+
+     32% {
+        left:-1080px;
+      
+    }
+
+    35% {
+        left:-2160px;
+        
+    }
+
+    47% {
+       left:-2160px;
+       
+    }
+
+   50% {
+      left:-3240px;
+      
+    }
+
+     63% {
+      left:-3240px;
+        
+    }
+
+    66% {
+        left:-4320px;
+      
+    }
+
+     79% {
+      left:-4320px;
+     
+    }
+
+    82% {
+        left:-5400px;
+       
+    }
+
+    100% {
+       left:0px;
+      
+    }
+}
+
+.img-slider {
+   display:flex;
+   float:left;
+    position:relative;
+    width:1080px;
+    height:720px;
+     animation-name:slide;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+     transition-duration:2s;
+    
+}
+
+ .heading1 {
+    opacity:0;
+    
+}
+
+.search {
+    display:flex;
+     position: relative;
+  
+}
+
+.section1 {
+   width:1080px;
+    overflow:hidden;
+     justify-content: center;
+    align-items: center;
+   margin:0px auto;
+    
+}
+
+.section2 .container {
+     display:flex;
+    width:100%;
+    height:max-content;
+    flex-wrap: wrap;
+   justify-content:center;
+     margin:10px auto;
+   
+}
+
+ .section2 .container .items {
+    margin: 10px;
+    width:200px;
+   height: 300px;
+     background-color:white;
+   border:2.5px solid black;
+   border-radius: 12px;
+   
+}
+ .section2 .container .items .name {
+     text-align:center;
+     background-color:rgb(197, 121, 207);
+     height:25px;
+     padding-top:4px;
+   color:white;
+     margin: 0;
+   
+}
+
+ .section2 .container .items .price {
+    float:left;
+    padding-left:10px;
+     display: block;
+     width:100%;
+   color:rgb(119, 6, 129);
+   font-weight: 650;
+    
+}
+
+ .section2 .container .items .info {
+     padding-left:10px;
+   color:rgb(197, 121, 207);
+    
+}
+
+.section2 .container .items .img img {
+   width:200px;
+     height:200px;
+     margin: 0;
+   padding: 0;
+     border-radius:12px;
+   transition-duration:0.8s;
+   
+}
+
+.section2 .container .items .img {
+     overflow: hidden;
+   margin: 0;
+   
+}
+
+.section2 .container .items:hover .img img {
+    transform: scale(1.2);
+    transition-duration:0.8s;
+   border-radius:12px;
+    
+}
+
+ footer {
+     display:flex;
+  flex-direction: column;
+     background-color: black;
+    align-items: center;
+    color:white;
+    
+}
+
+.footer1 {
+    display:flex;
+    flex-direction: column;
+   align-items: center;
+   color:white;
+   margin-top:15px;
+    
+}
+
+ .social-media {
+    display:flex;
+   justify-content: center;
+    color:white;
+     flex-wrap: wrap;
+  
+}
+
+.social-media a {
+   color:white;
+    margin:20px;
+     border-radius: 5px;
+   margin-top:10px;
+   color:white;
+    
+}
+
+.social-media a ion-icon {
+   color:white;
+  background-color: black;
+    
+}
+
+.social-media a:hover ion-icon {
+    color:rgb(119, 6, 129);
+    transform: translateY(5px);
+   
+}
+
+ .footer2 {
+   display: flex;
+   width:100%;
+   justify-content:space-evenly;
+    align-items: center;
+    text-decoration: none;
+   flex-wrap: wrap;
+    
+}
+
+ .footer0 {
+   font-weight:1200;
+     transition-duration: 1s;
+   
+}
+
+.footer0:hover {
+   color:rgb(197, 121, 207);
+    
+}
+
+.footer2 .heading {
+    font-weight: 900;
+   font-size: 18px;
+    
+}
+
+ .footer3 {
+    margin-top:60px;
+    margin-bottom: 20px;
+   display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+ .footer2 .heading:hover {
+    color:rgb(197, 121, 207);
+    
+}
+
+ .footer2 .div:hover {
+   transform: scale(1.05);
+    
+}
+
+.footer3 h4 {
+   margin:0 10px;
+    
+}
+
+ .footer2 div {
+   margin:10px;
+   
+}
+
+.menu {
+ visibility:hidden;
+   
+}
+
+.heading1 .ham:active {
+    color: rgb(119, 6, 129);
+    
+}
+
+.items {
+   overflow:hidden;
+    
+}
+
+ .ham,
+.close {
+     cursor:pointer;
+    
+}
+
+@media screen and (max-width:1250px) {
+    .heading ul li {
+       display:none;
+        
+    }
+
+    .items {
+         transform:scale(0.9);
+        
+    }
+
+    .img-slider img {
+        height:60vw;
+        width:80vw;
+        
+    }
+
+    .ham:active {
+         color:rgb(119, 6, 129);
+        
+    }
+
+    .menu {
+         display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+     .menu a ion-icon {
+        position: absolute;
+       
+    }
+
+    @keyframes slide1 {
+       0% {
+            left:0vw;
+            
+        }
+
+        15% {
+            left:0vw;
+           
+        }
+
+        20% {
+            left:-80vw;
+            
+        }
+
+      32% {
+            left:-80vw;
+           
+        }
+
+        35% {
+            left:-160vw;
+           
+        }
+
+         47% {
+           left:-160vw;
+           
+        }
+
+       50% {
+           left:-240vw;
+          
+        }
+
+         63% {
+             left:-240vw;
+            
+        }
+
+         66% {
+            left:-320vw;
+            
+        }
+
+        79% {
+             left:-320vw;
+           
+        }
+
+         82% {
+            left:-400vw;
+            
+        }
+
+        100% {
+             left:0vw;
+            
+        }
+    }
+
+     .menu ul {
+         display:flex;
+        flex-direction:column;
+         position: absolute;
+         width:100vw;
+        height:100vh;
+         background-color: black;
+         left:0;
+         top:0;
+         z-index:11;
+         align-items: center;
+         justify-content: center;
+        opacity:1;
+        
+    }
+
+     .close {
+         z-index:34;
+         color:white;
+         background-color: black;
+        
+    }
+
+    .close:active {
+        color:rgb(139, 126, 135);
+        
+    }
+
+    .menu ul li {
+         list-style: none;
+        margin: 20px;
+         border-top:3px solid white;
+         width:80%;
+         text-align:center;
+         padding-top:10px;
+      
+    }
+
+   .menu ul li a {
+        text-decoration: none;
+         padding-top: 10px;
+         color:white;
+         font-weight: 900;
+       
+    }
+
+     .menu ul li a:hover {
+        color:rgb(171, 107, 173);
+        
+    }
+
+    .img-slider {
+         display:flex;
+        float:left;
+         position:relative;
+         width:80%;
+         height:60%;
+         animation-name:slide1;
+        animation-duration: 10s;
+         animation-iteration-count: infinite;
+        transition-duration:2s;
+        
+    }
+
+     .section1 {
+         width:80%;
+        overflow:hidden;
+        justify-content: center;
+       align-items: center;
+         margin:0px auto;
+        
+    }
+
+    .heading1 {
+         opacity: 1;
+         position:relative;
+         bottom:8px;
+     
+    }
+
+    .search a {
+        display:flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    .heading1 .ham {
+         background-color: rgb(122, 80, 80);
+       color:white;
+        
+    }
+
+    #input {
+       width:200px;
+       flex-shrink:2;
+        
+    }
+
+    header {
+       height:150px;
+      
+    }
+
+}
+
+ @media screen and (max-width:550px) {
+     .heading ul li {
+         display:none;
+       
+    }
+
+    .heading1 {
+         opacity: 1;
+         bottom:8px;
+        
+    }
+
+     header {
+         height:250px;
+         flex-wrap: wrap;
+         display: flex;
+         flex-direction: column;
+       
+    }
+
+    #input {
+         width:150px;
+        
+    }
+
+ .close {
+         z-index:34;
+    }
+
+ .search a {
+         display:flex;
+         flex-wrap: nowrap;
+        
+    }
+ }
+ .css1{
+  background-color:rgb(190, 114, 174);
+  font-size:25px;
+  font-family: georgia;
+  font-style:italic;
+  color:purple;
+  text-shadow: 2px 2px 8px rgb(129, 68, 121);
+  transition: 2s;
+}
+pre{
+    font-family: georgia;
+  font-style:italic;
+}
+ a:link,a:visited{
+    color:white;
+    font-size: 25px;
+    text-decoration: none;
+  }
+      </style>
+    </head>
+    <body>
+        <head>
+
+            <link rel="stylesheet">
+            <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+          </head>
+          
+          <body style="background-color: rgb(103, 78, 126);">
+            <header style="border: 12px solid rgb(54, 22, 70);">
+              <div class="logo"><a href="bascis.html"><h6>Blink store</h6></a><a href="code.html"><br><h6>Ebooks</h6><br><h6>CAM STORE</h6></a></div>
+              <br>
+              <br>
+              <br>
+            </header>
+            <br>
+            <br>
+            <br>
+            <br>
+            <marquee class="css1"><pre>THANK   YOU   FOR   YOUR   INTEREST   IN   OUR   PAGE. WE'RE   SORRY   TO   INFORM   YOU   THAT   THE   PRODUCT   IS   OUT   OF   STOCK</pre></marquee>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section>  
+              <div class="section">
+                <div class="section1">
+                  <div class="img-slider">
+                    <img src="cam11.jpg" alt="" class="img">
+                    <img src="cam12.jpg" alt="" class="img">
+                    <img src="cam13.jpg" alt="" class="img">
+                    <img src="cam14.jpg" alt="" class="img">
+                    <img src="cam15.jpg" alt="" class="img">
+                    <img src="cam16.jpg" alt="" class="img">
+                  </div>
+          
+                </div>
+                <div class="section2">
+                  <div class="container">
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/kq9ta4w0/dslr-camera/w/z/n/z6-ii-z6-ii-kit-nikon-original-imag4btqjmu73zfk.jpeg?q=70" alt=""></div>
+                      <div class="name">NIKON Z6</div>
+                      <div class="price">₹1,89,999</div> 
+                      <div class="info">Kit Mirrorless Camera 24-70mm Lens  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img2"><img src="https://rukminim2.flixcart.com/image/832/832/kpwybgw0/dslr-camera/8/b/1/z7-ii-z7-ii-body-nikon-original-imag4fmgtyyzer4a.jpeg?q=70" alt=""></div>
+                      <div class="name">NIKON Z7</div>
+                      <div class="price">₹2,28,899</div>
+                      <div class="info">Body Mirrorless Camera with 64GB UHS-II SD Card  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img3"><img src="https://rukminim2.flixcart.com/image/832/832/jj8vyq80/dslr-camera/p/x/d/na-d850-nikon-original-imaf6v3yzutfgxcj.jpeg?q=70" alt=""></div>
+                      <div class="name">NIKON D850</div>
+                      <div class="price">₹2,23,499</div>
+                      <div class="info">DSLR Camera Body Only  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/kokdci80/dslr-camera/a/g/a/z-24-70mm-z5-nikon-original-imag2zugqzjmsth3.jpeg?q=70" alt=""></div>
+                      <div class="name">NIKON Z5</div>
+                      <div class="price">₹1,30,990</div>
+                      <div class="info">Mirrorless Camera 24-70 mm  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/jyxaw7k0/dslr-camera/6/h/s/d750-d750-nikon-original-imafgwaeuvdkjfae.jpeg?q=70" alt=""></div>
+                      <div class="name">NIKON D750</div>
+                      <div class="price">₹1,36,999</div>
+                      <div class="info">DSLR Camera Body with Single Lens: 24-120mm VR Lens  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5h9yuyc5zu.jpeg?q=70" alt=""></div>
+                      <div class="name">Canon EOS</div>
+                      <div class="price">₹30,499</div>
+                      <div class="info">3000D DSLR Camera 1 Camera Body, 18 - 55 mm Lens  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70" alt=""></div>
+                      <div class="name">Canon EOS M50 Mark</div>
+                      <div class="price">₹59,990</div>
+                      <div class="info">Mirrorless Camera EF-M15-45mm is STM Lens  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/k1jlyfk0/dslr-camera/8/h/f/90d-eos-90d-canon-original-imafh3b6rvjyvuna.jpeg?q=70" alt=""></div>
+                      <div class="name">Canon EOS</div>
+                      <div class="price">₹93,990</div>
+                      <div class="info">90D DSLR Camera Body Only  (Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/l5fnhjk0/dslr-camera/f/t/m/eos-r10-24-2-r10-canon-original-imagg42fsbgv79da.jpeg?q=70" alt=""></div>
+                      <div class="name">Canon EOS R10</div>
+                      <div class="price">₹1,15,990</div>
+                      <div class="info"> Mirrorless Camera Body Lens Kit(Black)</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/832/832/khf63680/dslr-camera/x/3/f/digital-camera-eos-r5-eos-r5-canon-original-imafxg43yszy6uz4.jpeg?q=70" alt=""></div>
+                      <div class="name">Canon Full Frame Mirrorless</div>
+                      <div class="price">₹2,99,990</div>
+                      <div class="info">EOS R5 Mirrorless Camera Body  (Black)</div>
+                    </div>
+                   
+                    <div class="items">
+                      <div class="img img1"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/drone/3/p/z/87-47-1-dji-mini-3-pro-drone-camera-fly-more-kit-plus-original-imagg2cyhgacv7jf.jpeg?q=70" alt=""></div>
+                      <div class="name">SKSALES DJI</div>
+                      <div class="price">₹1,38,999</div>
+                      <div class="info">Mini 3 Pro Drone Camera Fly Drone</div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTsiwSPvCKIfICtQCOZgJMbMY8iBNZ1CBKZCMBWFLsS6EF5CLyxrYG87y7fVyCd9GX0MszevN-zJKfA1ZJK6k-Gq_MR14l6ei8rjW5grQD9MR8bSzaiPFtUpg" alt=""></div>
+                      <div class="name">DJI Mini 3 Pro</div>
+                      <div class="price">₹81,999</div>
+                      <div class="info">4K/60fps Video, 48MP Photo</div>
+                    </div>
+                  
+          
+                </div>
+              </div>
+          
+            </section>
+            <footer style="background-color: white; color: blueviolet;">
+              <div class="footer0">
+                <h1>Blink</h1>
+              </div>
+              <div class="footer1 ">
+                Connect with us at<div class="social-media">
+                  <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                  <a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                  <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                  <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                  <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="footer2">
+                <div class="product">
+                  <div class="heading">Buy</div>
+                  <div class="div">Learn</div>
+                  <div class="div">Advertise</div>
+                  <div class="div">Pricing</div>
+                  <div class="div">Product Buisness</div>
+          
+                </div>
+                <div class="services">
+                  <div class="heading">courses</div>
+                  <div class="div">classes</div>
+                  <div class="div">Tutorials</div>
+                  <div class="div">Events</div>
+                  <div class="div">Others</div>
+                </div>
+                <div class="Company">
+                  <div class="heading">Company</div>
+                  <div class="div">Photography skills</div>
+                  <div class="div">Careers</div>
+                  <div class="div">pictur</div>
+                  <div class="div">Support</div>
+                </div>
+                <div class="Get Help">
+                  <div class="heading">Get Help</div>
+                  <div class="div">Help Center</div>
+                  <div class="div">Privacy Policy</div>
+                  <div class="div">Terms</div>
+                  <div class="div">Login</div>
+                </div>
+              </div>
+              <div class="footer3">Copyright © <h4>Blink</h4> 2021-2028</div>
+            </footer>
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+            <script src="ec.js"></script>
+          
+          </body>
+          
+          </html>
+    </body>
+</html>

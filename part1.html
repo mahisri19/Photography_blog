@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Blink</title>
+<link rel="icon" href="icon2.jpg" type="image/icon type">
+<link rel="stylesheet" href="css1.css">
+<style>
+    .div3{
+    
+    font-family:'playfair display';
+    background-color: rgb(138, 154, 91);
+    
+}
+.div1
+{
+    background-color: rgb(38, 51, 24);
+    color: antiquewhite;
+    padding-bottom:0;
+    margin:0;
+    padding:0;
+}
+h4{
+    font-size: 35px;
+}
+p{
+    font-size: 25px;
+}
+button{
+  background-color:antiquewhite;
+  color:rgb(38, 51, 24);
+  font-size: 30px;
+  height: 70px;
+  width: 250px;
+  font-family: 'playfair display';
+}
+.div2{
+background-color:rgb(232, 242, 199);
+margin:0;
+padding:0;
+}
+.font2{
+    font-size: 40px;
+}
+.form-submit-button {
+        background:rgb(232, 242, 199);
+        color:black;
+        border-style: outset;
+        border-color:black;
+        border-width:5px;
+        height: 50px;
+        width: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        text-shadow: none;
+}
+h5{
+    font-size: 45px;
+}
+.div4{
+   background-color:  rgb(253, 255, 242);
+}
+</style>
+<script>
+function Validate()
+            {
+                var fname = document.querySelector('input[name="fname"]').value;
+                var email = document.querySelector('input[name="email"]').value;
+                var lname = document.querySelector('input[name="lname"]').value;
+    
+               
+                if (fname == ""  || email == "" || lname =="") {
+                    alert('Please fill all the details');
+                    return false;
+                }
+    
+              
+                if (isNaN(phno)) {
+                    alert('Phone Number should only contain numbers.');
+                    return false;
+                }
+                if(phno.length!=10)
+                {
+                    alert('phone number should contain only 10 numbers');
+                    return false;
+                }
+    
+                if (!email.includes('@') || !email.includes('.com')||!email.includes('gmail')) {
+                    alert('invalid email');
+                    return false;
+                }
+                alert("form is submitted");
+                return true;
+            }
+</script>
+    </head>
+    <body>
+        
+        <div style="padding-top: 0%;" class="div3">
+            <div class='child'><h1 class="header" style="padding-top: 1px;">&nbsp;BLINK</h1></div>&nbsp;
+            
+            <div class='child'><p class="small">&nbsp;</p>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="child">
+<a href="part1.html" target="_self">HOME</a>
+
+            </div>&nbsp;&nbsp;&nbsp;
+            <div class="child">
+
+                <a href="about.html" target="_self">ABOUT</a>
+            </div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="Blog.html" target="_self">MERCH</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="gallery.html" target="_self">GALLERY</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="IPD.html" target="_self">INTERNATIONAL PHOTOGRAPHY DAY '23</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child" >
+    <a href="Events.html" target="_self">EVENTS</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child" >
+    <a href="contact.html" target="_self">CONTACT</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="socials.html" target="_self">SOCIALS</a>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="child">
+    <a href="homepage.html" target="_self">Join BLINK</a>
+</div>&nbsp;&nbsp;&nbsp;
+        </div>
+    <img src="collage.png" width="1500" height="800">
+</div>
+</div>
+    <div class="div1">
+        <br><br><br><br><br>
+        <table style="width:100%">
+            <tr>
+                <td><h4> BLINK'S First International photography day Event</h4>
+                <p><b>Saturday, August 19,2023<br><br>
+                    The St.Regis New York<br><br>
+                    Newyork City,USA<br><br>
+                    9:30 am - 5:00 pm<br><br>
+                </b></p>
+                <p>Blink is very excited to host out first International photography<br>
+                day event.Come join for a day full of fun!</p>
+                <button onclick="window.location.href='IPD.html';">Learn More</button></td>
+                <td><img src="ipd3.png" width="500" height="500"></td>
+            </tr>
+
+        </table>
+        <br><br><br><br>
+    </div>
+    <div class="div2" style="padding-top: 0;">
+        <center>
+            <p class="font2">Stay Inspired</p>
+            <p>Sign up with your email address to recieve news and updates</p>
+            <form onsubmit="return Validate()">
+            <table >
+                
+                <tr>
+                    <td>First Name:<br>
+                        <input type="text" name="fname" id="fname" style="width: 210px;height: 60px ;border-radius: 5px;"></td>
+                        <td>Last name:<br>
+                            <input type="text" name="lname" id="lname" style="width: 210px;height: 60px ;border-radius: 5px;"></td>
+                </tr>
+                <tr>
+                    <td>Email:<br>
+                        <input type="text" name="email" id="email" style="width: 270px;height: 60px ;border-radius: 5px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><br><input type="submit" name="submit" value="Sign Up" class="form-submit-button" ></td>
+                    
+                </tr>
+                <tr><td><br><br>We respect your privacy.</td></tr>
+            </table>
+        </form>
+        </center>
+    </div>
+    <div class="div3">
+<br><br><br>
+<center>
+        <table>
+            <tr>
+                <td><h5>The Mission of Blink</h5>
+                  <p>  Blink is a photography website that specializes in organizing photography events. Its primary goal is to<br>
+                     provide a platform for up-and-coming photographers to showcase their work. Additionally, Blink features <br>
+                     an ecommerce store where photography enthusiasts can purchase a wide range of photography journals and books,<br>
+                      all presented in a professional and aesthetically pleasing manner</p></td>
+            </tr>
+            <tr>
+                <td><button onclick="window.location.href='events.html';">Events</button></td>
+            </tr>
+        </table>
+    </center>
+    </div>
+    
+<div class="div4">
+<center>
+    <h5>Our collaborators</h5>
+    <hr>
+</center>
+<table style="width:100%">
+    <tr>
+        <td><p><b>Magnum Photos</b></p</td>
+        <td><p><b>Getty Images</b></p</td>
+        <td><p><b>Shutterstock</b></p></td>
+        <td><p><b>Canon INC.</b></p></td>
+        <td><p><b>Sony</b></p></td>
+        <td><p><b>Nikon</b</p></td>
+    </tr>
+</table>
+<br>
+<br>
+<p><a href="https://www.instagram.com/evabartosphotoart#"><img src="fineart1.png" height="140px"></a> <a href="https://www.instagram.com/throughlightandtime/#"><img src="astro_1.png" height="140px" width="140px"></a> <a href="https://www.instagram.com/harpy_hiroko/#"><img src="fineart2.png" height="140px"></a> <a href="https://www.instagram.com/abstract_.photography/"><img src="abstract.1.png" height="140px"></a> <a href="https://www.instagram.com/marvinjlee/#"><img src="fineart4.png" height="140px"></a> <a href="https://www.instagram.com/davidgarlandmakes/#"><img src="fineart3.png" height="140px"></a> <a href="https://www.instagram.com/larry88_keys/"><img src="abstract4.png" height="140px" width="135px"></a> <a href="https://www.instagram.com/tomascollignon/"><img src="abstract3.png" height="140px" ></a> <a href="https://www.instagram.com/abst.ractphotography/"><img src="abstract2.png" height="140px"></a> <a href="https://www.instagram.com/azzurriii/"><img src="landscape1.png" height="140px"></a> <a href="https://www.instagram.com/patricksvisuals/"><img src="landscape2.png" height="140px"></a> <a href="https://www.instagram.com/kiran.nagendra/"><img src="landscape3.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/jaka_ivancic/"><img src="landscape4.png" height="140px"></a> <a href="https://www.instagram.com/brownfashiongal/"><img src="fashion1.png" height="140px"></a> <a href="https://www.instagram.com/knikmanav/"><img src="journel1.png" height="140px"></a> <a href="https://www.instagram.com/amareazul_/"><img src="journal2.png" height="140px"></a> <a href="https://www.instagram.com/smilerom70/"><img src="journal3.png" height="140px"></a> <a href="https://www.instagram.com/michele_lapini_photo/"><img src="journal4.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/kazutoshi.nagata31/"><img src="astro_2.png" height="140px" width="190"></a></p>
+<br>
+<br>
+<p style="font-size: medium;text-align: center;">© 2022 BLINK. All Rights Reserved<br><a href="https://www.instagram.com/stevemccurryofficial/#"><img src="insta.png"></a> <a href="https://www.youtube.com/watch?v=tFxPDLt88L0"><img src="youtube.png"></a> <a href="https://www.facebook.com/photo/?fbid=470338827785937&set=a.213147040171785&__tn__=%3C"><img src="facebook.png"></a> </p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

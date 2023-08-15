@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="icon" href="icon2.jpg" type="image/icon type">
+        <link rel="stylesheet" href="css1.css">
+    <style>
+        .color{background-image: url(sbg1.png);}
+        .center{padding-left:450px;}
+        img{transition: transform 0.3s;}
+        
+        img:hover{transform : scale(1.2);}
+        input[type=submit] {
+            background-color: beige;
+            color:black;
+        }
+        input[type=submit]:hover {
+            background-color:black;
+            color:white;
+        }
+        .color1{background-color:cornsilk;}
+        .one{
+            background-image:url("C:\Users\bhavya\OneDrive\Documents\htmlandcss\bg8.png");
+        }
+        .height{
+            height: fit-content;
+        }
+        .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+
+    .arrow.left {
+      left: -50px;
+    }
+
+    .arrow.right {
+      right: -50px;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+    .img {
+        height:100px;
+        width:100px;
+    }
+    .slideshow-container img {
+      width: 1200px;
+      height: 600px;
+      padding-left: 150px;
+    }
+    
+
+    .slideshow-container .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slideshow-container .slide.active {
+      opacity: 1;
+    }
+
+    .slideshow-container .prev,
+    .slideshow-container .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .slideshow-container .prev {
+      left: 10px;
+    }
+
+    .slideshow-container .next {
+      right: 10px;
+    }
+    .css1{
+  background-color:rgb(190, 114, 174);
+  font-size:25px;
+  font-family: georgia;
+  color:rgb(233, 231, 85);
+  text-shadow: 2px 2px 8px rgb(129, 68, 121);
+  transition:2s;
+}
+.font{
+    font-size: large;
+    line-height: 2.5;   
+}
+.bg{
+    background-image: url(sbg.png);
+}
+.bg1{
+    padding-left: 30px;
+}
+.aligned-paragraph {
+            text-align: justify;
+        }
+.header2{
+  text-align:left;
+  color:black;
+  font-size:70px;
+}
+.small2{
+  text-align:left;
+  color:black;
+  font-size:20px;
+}
+a:link,a:visited{
+    color:black;
+    font-size: 18px;
+    text-decoration: none;
+  }
+    </style>
+    </head>
+    <body style="background-image: url(sbg1.png);">
+        <div class="p1" >
+            <div class="color">
+                <div class='child' style="height:200px;"><h1 class="header2" style="padding-top: 1px;">BLINK</h1></div>&nbsp;
+                
+                <div class='child'><p class="small2">&nbsp;</p>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="child">
+    <a href="part1.html" target="_self">HOME</a>
+       
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="child">
+    
+                    <a href="about.html" target="self">ABOUT</a>
+                </div>&nbsp;&nbsp;&nbsp;
+    <div class="child">
+        <a href="Blog.html" target="_self">MERCH</a>
+    </div>&nbsp;&nbsp;&nbsp;
+    <div class="child">
+        <a href="gallery.html" target="_self">GALLERY</a>
+    </div>&nbsp;&nbsp;&nbsp;
+    <div class="child">
+        <a href="IPD.html" target="_self">INTERNATIONAL PHOTOGRAPHY DAY '23</a>
+    </div>&nbsp;&nbsp;&nbsp;
+    <div class="child">
+        <a href="Events.html" target="_self">EVENTS</a>
+    </div>&nbsp;&nbsp;&nbsp;
+    <div class="child" >
+        <a href="contact.html" target="_self">CONTACT</a>
+    </div>&nbsp;&nbsp;&nbsp;
+    <div class="child">
+        <a href="socials.html" target="_self">SOCIALS</a>
+    </div>&nbsp;&nbsp;&nbsp;
+    <div class="child">
+        <a href="homepage.html" target="_self">Join BLINK</a>
+    </div>&nbsp;&nbsp;&nbsp;
+            </div>
+            </div>
+            <div class="bg">
+            <br>
+            <marquee class="css1"><pre>EXTRAORDINARY PHOTOGRAPHY EVENTS ORGANISED BY BLINK</pre></marquee>
+            <br>
+            <br>
+            <div class="slideshow-container">
+    
+                <img class="slide active" src="s5.jpg" alt="Image 1">
+                <img class="slide" src="s1.jpg" >
+                <img class="slide" src="s4.jpg" >
+                <img class="slide" src="s3.jpg" >
+                <img class="slide" src="s2.jpg" >
+            
+                  <br><br>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+                <div class="next" onclick="changeSlide(1)">&#10095;</div>
+              </div>
+            
+              <script>
+                let currentSlide = 0;
+                const slides = document.getElementsByClassName('slide');
+            
+                function showSlide(n) {
+                  slides[currentSlide].classList.remove('active');
+                  currentSlide = (currentSlide + n + slides.length) % slides.length;
+                  slides[currentSlide].classList.add('active');
+                }
+            
+                function changeSlide(n) {
+                  showSlide(n);
+                }
+                
+                
+              </script>
+            
+              <br>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="bg1">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              <h2 style="font-size: xx-large;">Insight Into BLINK</h2>
+              <br>
+              <table>
+                <tr>
+                    <td><img src="socials.png" width="500px"></td>
+                    <td style="padding-left: 10px;"><div class="font"><div class="aligned-paragraph"><p>Blink is a photography website that specializes in organizing photography events. Its primary goal is to provide a platform for up-and-coming photographers to showcase their work. Additionally, Blink features an ecommerce store where photography enthusiasts can purchase a wide range of photography journals and books, all presented in a professional and aesthetically pleasing manner.<p></div></p>Our Valued Associates:</p><p><input type="button" value="Magnum Photos" style="width: 30%;height: 40px;border-radius: 5px;border-width: 2px;background-color: purple;color:gold;font-size: medium;"> <input type="button" value="Getty Images" style="width: 30%;height: 40px;border-radius: 5px;border-width: 2px;background-color: purple;color:gold;font-size: medium;"> <input type="button" value="Shutterstock" style="width: 30%;height: 40px;border-radius: 5px;border-width: 2px;background-color: purple;color:gold;font-size: medium;"></p><p><input type="button" value="Canon Inc." style="width: 30%;height: 40px;border-radius: 5px;border-width: 2px;background-color: purple;color:gold;font-size: medium;"> <input type="button" value="Sony" style="width: 30%;height: 40px;border-radius: 5px;border-width: 2px;background-color: purple;color:gold;font-size: medium;"> <input type="button" value="Nikon" style="width: 30%;height: 40px;border-radius: 5px;border-width: 2px;background-color: purple;color:gold;font-size: medium;"></p>
+                    </div> <td>
+                </tr>
+              </table>
+            
+              <br>
+              <br><br><br><br><br><br><br><br>
+              <h2 style="font-size: xx-large;">BLINK LOCATION</h2>
+              <br>
+              <table>
+                <tr>
+                    <td style="width: 500px;font-size: large;"><p>Adithi Bhavanam,near Swimming pool</p>
+                    <p>Amrita Vishwa Vidyapeetam</p><p>Ettimadai,Coimbatore</p>
+                <p>641112</p>
+            <p>Tamil Nadu</p>
+            <p><img src="phone.png" height="30px"> 6304015408</p>
+            <p><img src="maps.png" height="30px">Location<form action=https://www.google.com/maps/search/Mythereyi,Amrita+Vishwa+Vidyapeetham,+Coimbatore+campus,+Amritanagar,+Ettimadai,+Tamil+Nadu/@10.9026791,76.8962505,14z/data=!3m1!4b1?entry=ttu><input type="submit" name="button"value="Maps" style="width: 30%;height: 40px;border-radius: 5px;border-width: 2px;"></form></p></td>
+        <td><div class="google-map">
+          <iframe
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border:0"
+          src="https://www.google.com/maps/embed?pb=YOUR_LOCATION"
+          allowfullscreen
+      ></iframe>
+     </div></td>
+                </tr>
+              </table>
+            </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+<br>
+<br>
+<p><a href="https://www.instagram.com/evabartosphotoart#"><img src="fineart1.png" height="140px"></a> <a href="https://www.instagram.com/throughlightandtime/#"><img src="astro_1.png" height="140px" width="140px"></a> <a href="https://www.instagram.com/harpy_hiroko/#"><img src="fineart2.png" height="140px"></a> <a href="https://www.instagram.com/abstract_.photography/"><img src="abstract.1.png" height="140px"></a> <a href="https://www.instagram.com/marvinjlee/#"><img src="fineart4.png" height="140px"></a> <a href="https://www.instagram.com/davidgarlandmakes/#"><img src="fineart3.png" height="140px"></a> <a href="https://www.instagram.com/larry88_keys/"><img src="abstract4.png" height="140px" width="135px"></a> <a href="https://www.instagram.com/tomascollignon/"><img src="abstract3.png" height="140px" ></a> <a href="https://www.instagram.com/abst.ractphotography/"><img src="abstract2.png" height="140px"></a> <a href="https://www.instagram.com/azzurriii/"><img src="landscape1.png" height="140px"></a> <a href="https://www.instagram.com/patricksvisuals/"><img src="landscape2.png" height="140px"></a> <a href="https://www.instagram.com/kiran.nagendra/"><img src="landscape3.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/jaka_ivancic/"><img src="landscape4.png" height="140px"></a> <a href="https://www.instagram.com/brownfashiongal/"><img src="fashion1.png" height="140px"></a> <a href="https://www.instagram.com/knikmanav/"><img src="journel1.png" height="140px"></a> <a href="https://www.instagram.com/amareazul_/"><img src="journal2.png" height="140px"></a> <a href="https://www.instagram.com/smilerom70/"><img src="journal3.png" height="140px"></a> <a href="https://www.instagram.com/michele_lapini_photo/"><img src="journal4.png" height="140px" width="160px"></a> <a href="https://www.instagram.com/kazutoshi.nagata31/"><img src="astro_2.png" height="140px" width="200"></a></p>
+<br>
+<br>
+<p style="font-size: medium;text-align: center;">© 2022 BLINK. All Rights Reserved<br><a href="https://www.instagram.com/stevemccurryofficial/#"><img src="insta.png"></a> <a href="https://www.youtube.com/watch?v=tFxPDLt88L0"><img src="youtube.png"></a> <a href="https://www.facebook.com/photo/?fbid=470338827785937&set=a.213147040171785&__tn__=%3C"><img src="facebook.png"></a> </p>
+        
+    
+       </body>
+</html>

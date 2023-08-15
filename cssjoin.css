@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Bacasime+Antique:regular);
+body
+{
+    background-color:rgb(253, 255, 242);
+    font-family:'playfair display';
+}
+.header{
+    text-align:left;
+    color: black;
+    font-size:70px;
+  }
+    .child {
+      display: inline-block;
+    }
+    .small{
+  text-align:left;
+    color: black;
+    font-size:20px;
+    }
+    a:link,a:visited{
+      color:black;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    h3{
+        font-size: 70px;
+        font-family:'Playfair display';
+    }
+    .form-submit-button {
+        background:rgb(253, 255, 242);;
+        color:black;
+        border-style: outset;
+        border-color:black;
+        border-width:5px;
+        height: 50px;
+        width: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font: size 20px;;
+        text-shadow: none;
+    }
+    p{
+      font-size: 18px;
+      font-family: 'quicksand';
+    }
+    table{
+      font-family: 'playfair display';
+      font-size:18px;
+    }
+    .font1{
+      font-family: 'quicksand';
+    }
+    .form-reset-button{
+      background:rgb(253, 255, 242);;
+          color:black;
+          border-style: outset;
+          border-color:black;
+          border-width:5px;
+          height: 50px;
+          width: 100px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font: size 20px;;
+          text-shadow: none;
+  }
+  img{transition: transform 0.3s;}
+        
+        img:hover{transform : scale(1.2);}
+        input[type=submit] {
+            background-color: beige;
+            color:black;
+        }

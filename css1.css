@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+.header{
+  text-align:left;
+  color:antiquewhite;
+  font-size:70px;
+}
+  .child {
+    display: inline-block;
+  }
+  .small{
+text-align:left;
+  color:antiquewhite;
+  font-size:20px;
+  }
+  a:link,a:visited{
+    color:antiquewhite;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  body{
+    font-family:'playfair Display';
+}
